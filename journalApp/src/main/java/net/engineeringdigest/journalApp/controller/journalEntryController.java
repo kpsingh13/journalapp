@@ -30,7 +30,7 @@ public class journalEntryController {
 
     @GetMapping("id/{myId}")
     public JournalEntry getJournalEntryById(@PathVariable Long myId){
-       return journalEntries.get(myId);
+       return journalEntries.get(myId);// new
 
     }
 }

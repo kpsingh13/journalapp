@@ -22,11 +22,11 @@ public class journalEntryController {
 
     }
 
-    @PostMapping
-    public boolean createEntry(@RequestBody JournalEntry myEntry){
-        journalEntries.put(myEntry.getId(), myEntry);
-        return true;
-    }
+//    @PostMapping
+//    public boolean createEntry(@RequestBody JournalEntry myEntry){
+//        journalEntries.put(myEntry.getId(), myEntry);
+//        return true;
+//    }
 
     @GetMapping("id/{myId}")
     public JournalEntry getJournalEntryById(@PathVariable Long myId){
